@@ -13,6 +13,10 @@ large_text = response.text
 
 # Step 2: Split the large text into chunks of 100 lines
 lines = large_text.splitlines()
+
+# Filter out lines that are either empty or start with #
+filtered_lines = [line for line in lines if line.strip() and not line.startswith('#')]
+
 chunk_size = 100
 chunks = [lines[i:i + chunk_size] for i in range(0, len(lines), chunk_size)]
 
