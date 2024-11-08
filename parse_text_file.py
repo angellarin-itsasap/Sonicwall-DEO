@@ -17,7 +17,7 @@ chunk_size = 100
 chunks = [lines[i:i + chunk_size] for i in range(0, len(lines), chunk_size)]
 
 # Step 3: Create the 'Sonicwall' directory if it doesn't exist
-folder_name = 'Sonicwall'
+folder_name = 'CPDBLD.Net - Emerging Threats'
 if not os.path.exists(folder_name):
     os.makedirs(folder_name)
 
