@@ -2,7 +2,7 @@ import os
 import requests
 
 # Step 1: Download the large text file from the website
-url = 'https://example.com/large-text-file.txt'  # Replace with the actual URL
+url = 'https://cpdbl.net/lists/etknown.list'  # Replace with the actual URL
 response = requests.get(url)
 
 if response.status_code != 200:
